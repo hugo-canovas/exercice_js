@@ -35,7 +35,7 @@ const filterNameStartByA = (array = ["Alice", "Adrien", "Alan", "Hugo", "Camille
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array = [1, 2, 3]) => array.reduce((x, y) => x + y);
+const sum = (array = [1, 2, 3]) => array.reduce((x, y) => x + y, 0);
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
@@ -62,5 +62,5 @@ const findUserById = (array = [
   {id: 3, name: 'Foo'},
   {id: 4, name: 'Bar'}] , id = 3) => array.find((x) => x.id === id)
 
-  
+
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
